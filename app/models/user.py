@@ -8,4 +8,5 @@ class User(Base):
     name:str = Column(String)
     email:str = Column(String, unique=True, index=True)
 
+    # Relacion
     task = relationship("Taks", back_populates="user")
