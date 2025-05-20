@@ -9,4 +9,4 @@ class User(Base):
     email:str = Column(String, unique=True, index=True)
 
     # Relacion
-    task = relationship("Taks", back_populates="user")
+    task = relationship("Task", back_populates="user")
