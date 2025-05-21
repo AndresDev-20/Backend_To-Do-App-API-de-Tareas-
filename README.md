@@ -73,14 +73,26 @@ FastAPI genera automáticamente documentación interactiva:
 ## 📦 Estructura del proyecto
 
 ```
-app/
-│
-├── main.py            # Punto de entrada principal
-├── models/            # Modelos SQLAlchemy
-├── schemas/           # Esquemas Pydantic
-├── crud/              # Operaciones de base de datos
-├── routes/            # Rutas (endpoints)
-└── database/          # Configuración de conexión a PostgreSQL
+app/                       # Código principal de la app
+│   ├── main.py                # Punto de entrada de la app
+│   ├── models/                # Modelos de la base de datos
+│   │   ├── task.py
+│   │   └── user.py
+│   ├── api/                   # Lógica de endpoints API
+│   │   └── routers/           # Rutas
+│   │       └── despues.py     # Archivo con rutas específicas
+│   ├── db/                    # Base de datos
+│   │   ├── base.py
+│   │   ├── base_class.py
+│   │   └── session.py
+│   ├── crud/                  # Operaciones CRUD
+│   │   ├── task.py
+│   │   └── user.py
+│   ├── schemas/               # Esquemas Pydantic
+│   │   ├── task.py
+│   │   └── user.py
+│   └── core/                  # Configuraciones y settings
+│       └── config.py
 ```
 
 ## 🧪 Próximas mejoras (ideas)
