@@ -8,11 +8,11 @@ from app.schemas import user as user_schema
 
 router = APIRouter()
 
-@router.get("/", response_model=List[user_schema.UserSchema])
+@router.get("/", response_model=List[user_schema.User])
 async def read_user(db: Session = Depends(get_db)):
     return user_crud.get_user(db)
 
-@router.get("/{user_id}", response_model=user_schema.UserSchema)
+@router.get("/{user_id}", response_model=user_schema.User)
 async def read_user_id(user_id: int, db: Session = Depends(get_db)):
     db_user = user_crud.get_user_id(db, user_id=user_id)
     if db_user is None:

@@ -4,9 +4,10 @@ from app.db.base_class import Base
 
 
 class User(Base):
+    __tablename__ = "users"
     id:int = Column(BigInteger, primary_key=True, index=True)
     name:str = Column(String)
     email:str = Column(String, unique=True, index=True)
 
     # Relacion
-    task = relationship("Task", back_populates="user")
+    tasks = relationship("Task", back_populates="users")

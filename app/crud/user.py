@@ -2,10 +2,11 @@
 from sqlalchemy.orm import Session
 from app.models.user import User
 from app.schemas.user import UserSchema
+from sqlalchemy.orm import joinedload
 
 # Obtenemos toda la lista de los usuarios
 def get_user(db: Session):
-    return db.query(User).all()
+    return db.query(User).options(joinedload(User.tasks)).all()
 
 # Obtenemos un usuario por su id
 def get_user_id(db: Session, user_id: int):
