@@ -1,7 +1,3 @@
-
-
----
-
 # 📝 To-Do App Backend con FastAPI
 
 Este proyecto es el backend de una aplicación de tareas (To-Do App) desarrollada con **FastAPI**. Permite gestionar usuarios y tareas con una arquitectura robusta, moderna y segura mediante autenticación con JWT.
@@ -113,10 +109,10 @@ app/
 
 ## ✅ Estado del Proyecto
 
-✔️ Autenticación JWT implementada
-✔️ Encriptación de contraseñas con bcrypt
-✔️ Protección de rutas privadas
-✔️ Gestión de tareas y usuarios funcional
+✔️ Autenticación JWT implementada  
+✔️ Encriptación de contraseñas con bcrypt  
+✔️ Protección de rutas privadas  
+✔️ Gestión de tareas y usuarios funcional  
 ✔️ Arquitectura modular y escalable
 
 ## 💡 Próximas mejoras (ideas)
@@ -128,6 +124,5 @@ app/
 
 ## 👨‍💻 Autor
 
-**Yeison Andrés Marroquín Bernal (Andres.dev)**
+**Yeison Andrés Marroquín Bernal (Andres.dev)**  
 *Desarrollador Full Stack*
-
