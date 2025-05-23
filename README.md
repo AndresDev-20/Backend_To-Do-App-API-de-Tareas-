@@ -1,4 +1,4 @@
-# 📝 To-Do App Backend con FastAPI
+# 📝 To-Do App Backend con FastAPI 😼
 
 Este proyecto es el backend de una aplicación de tareas (To-Do App) desarrollada con **FastAPI**. Permite gestionar usuarios y tareas con una arquitectura robusta, moderna y segura mediante autenticación con JWT.
 
