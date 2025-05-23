@@ -8,6 +8,7 @@ class User(Base):
     id:int = Column(BigInteger, primary_key=True, index=True)
     name:str = Column(String)
     email:str = Column(String, unique=True, index=True)
+    password: str = Column(String, unique=True, index=True)
 
     # Relacion
     tasks = relationship("Task", back_populates="users")
